@@ -33,7 +33,18 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
-        {% block content %}{% endblock %}
+        <div class="wrapper">
+            {# Navigation #}
+            {% include 'partials/navbar.html' %}
+
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+
+            {# Footer #}
+            {% include 'partials/footer.html' %}
+        </div>
+
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/airtek_website.js' %}"></script>
