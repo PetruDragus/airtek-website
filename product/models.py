@@ -1,14 +1,13 @@
 from django.db import models
 
-# Create your models here.
 from wagtail.admin.edit_handlers import FieldPanel
 from wagtail.core.models import Page
 
 
 # Create your models here.
-class AboutPage(Page):
-    """About page class"""
-    templates = "about/about_page.html"
+class ProductPage(Page):
+    """Product page class"""
+    templates = "product/product_page.html"
 
     subtitle = models.CharField(max_length=200, null=True, blank=True)
 
@@ -17,5 +16,5 @@ class AboutPage(Page):
     ]
 
     class Meta:
-        verbose_name = "About Page"
-        verbose_name_plural = "About Pages"
+        verbose_name = "Product Page"
+        verbose_name_plural = "Product Pages"
