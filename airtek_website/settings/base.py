@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'contact',
     'about',
     'product',
+    'menus',
 
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
