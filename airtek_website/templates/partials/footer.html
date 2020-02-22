@@ -6,13 +6,17 @@
 
         <div class="col-md-6 text-right">
             <div class="social">
-                <a href="/">
+                {% if settings.site_settings.SocialMediaSettings.facebook %}
+                <a href="{{ settings.site_settings.SocialMediaSettings.facebook }}" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
+                {% endif %}
 
-                <a href="/">
+                {% if settings.site_settings.SocialMediaSettings.google %}
+                <a href="{{ settings.site_settings.SocialMediaSettings.google }}" target="_blank">
                     <i class="fab fa-google-plus-g"></i>
                 </a>
+                {% endif %}
             </div>
         </div>
     </div>
