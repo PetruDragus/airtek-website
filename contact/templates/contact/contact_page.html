@@ -1,5 +1,180 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
-    {{ self.subtitle }} is the page
+    <section id="contact-header" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% 50%;padding: 120px 0;">
+        <div class="container">
+            <div class="row">
+                <h1 class="section-title" data-aos="zoom-in">
+                    Contact <span class="title-span-green">BELOR</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="list-wrap fade-right" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+40.336.401.964</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+40.336.401.964</span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <span>info@belor.ro</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Corp B, Cam. 8-16, Strada Domneasca 49 , Galati, Romania</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-body" style="padding: 60px 0;">
+        <div class="container">
+            <div class="row">
+                <h1 class="section-title text-center width-100" data-aos="zoom-in" style="margin-bottom: 10px;">
+                    Echipa comerciala
+                </h1>
+
+                <div class="divider" style="margin: 0;">
+                    <hr style="width: 10%;">
+                </div>
+            </div>
+
+            <div class="row m-t-25">
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="400">
+                    <div class="contact-list-block">
+                        <div class="list-wrap">
+
+                            <h4 class="subtitle-ct">Director national de vanzari</h4>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>Toni Radu</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+40.336.401.964</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    <span>toni.radu@belor.ro</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="700">
+                    <div class="contact-list-block">
+                        <div class="list-wrap">
+
+                            <h4 class="subtitle-ct">Director vanzari Sud-Est</h4>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>Toni Radu</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+40.336.401.964</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    <span>toni.radu@belor.ro</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="1000">
+                    <div class="contact-list-block">
+                        <div class="list-wrap">
+
+                            <h4 class="subtitle-ct">Director vanzari Sud</h4>
+
+                            <ul>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>Toni Radu</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    <span>+40.336.401.964</span>
+                                </li>
+                                <li>
+                                    <i class="far fa-envelope"></i>
+                                    <span>toni.radu@belor.ro</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Nume" class="form-input">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Prenume" class="form-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Adresa email" class="form-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Numar telefon" class="form-input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea type="text" name="additional_info" rows="4" cols="50" class="form-input" style="height: 155px;"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-form">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="m-t-45">
+                        <div class="title-block7"></div>
+                        <div style="width: 100%;box-shadow: 0 0 5px #d6d6d6;">
+                            <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=500&amp;hl=en&amp;q=Halenseestraße+3,+10711+Berlin,+Germany+(Blackhansa)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}

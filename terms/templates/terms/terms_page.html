@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load wagtailcore_tags %}
+
+{% block content %}
+    <div id="page-wrap" class="container" style="padding: 70px 0;">
+        <div class="">
+            <div class="page-header" style="width:100%;margin-bottom:120px;">
+                <h1 class="text-center">{{ self.title }}</h1>
+                <div class="divider" style="margin: 0px 0;">
+                    <hr style="width: 5%;">
+                </div>
+            </div>
+            <div class="page-content">
+                {{ self.content|richtext }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

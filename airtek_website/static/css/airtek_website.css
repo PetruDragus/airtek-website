@@ -4,6 +4,15 @@ li {
 a {
   text-decoration: none !important; }
 
+.width-100 {
+  width: 100% !important; }
+
+.m-t-45 {
+  margin-top: 45px; }
+
+.m-t-25 {
+  margin-top: 25px; }
+
 body {
   background-color: #fefffe; }
 
@@ -46,6 +55,14 @@ section {
   position: relative; }
   section span.title-span {
     color: #DEDC01; }
+  section span.bold {
+    font-weight: 800; }
+  section h4.subtitle-ct {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 20px; }
+  section span.title-span-green {
+    color: #00994E !important; }
   section h1.section-title {
     font-size: 50px;
     color: #1e1e1e;
@@ -67,6 +84,52 @@ section {
     line-height: 26px;
     width: 50%;
     margin-top: 25px; }
+  section .content-text {
+    font-size: 18px; }
+  section p.section-subtitle-medium {
+    margin-bottom: 10px;
+    font-family: Raleway;
+    font-size: 22px;
+    line-height: 30px;
+    width: 50%;
+    margin-top: 25px;
+    font-weight: 600; }
+  section .list-wrap {
+    margin-top: 50px; }
+    section .list-wrap ul {
+      padding: 0; }
+      section .list-wrap ul li {
+        margin-bottom: 5px; }
+        section .list-wrap ul li i {
+          color: #DEDC01;
+          font-size: 20px; }
+        section .list-wrap ul li span {
+          font-family: Roboto Condensed;
+          font-weight: 500;
+          margin-left: 15px; }
+  section .contact-form {
+    margin-top: 55px; }
+    section .contact-form input.form-input {
+      width: 100%;
+      border-radius: 15px;
+      padding: 10px 25px;
+      font-size: 15px;
+      font-family: Roboto Condensed;
+      border: 2px solid #DEDC01; }
+    section .contact-form textarea {
+      width: 100%;
+      border-radius: 15px;
+      padding: 10px 25px;
+      font-size: 15px;
+      font-family: Roboto Condensed;
+      border: 2px solid #DEDC01; }
+    section .contact-form button.btn.btn-primary.submit-form {
+      background-color: #00994E !important;
+      border-radius: 2px;
+      font-size: 15px;
+      font-family: Raleway;
+      font-weight: 600;
+      padding: 7px 25px; }
 
 section#intro {
   padding: 175px 0; }

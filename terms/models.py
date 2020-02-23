@@ -1,24 +1,23 @@
 from django.db import models
 
-# Create your models here.
 from wagtail.admin.edit_handlers import FieldPanel
 from wagtail.core.fields import RichTextField
 from wagtail.core.models import Page
 
 
 # Create your models here.
-class AboutPage(Page):
-    """About page class"""
-    templates = "about/about_page.html"
+class TermsPage(Page):
+    """Terms page class"""
+    templates = "terms/terms_page.html"
 
-    subtitle = RichTextField()
+    page_title = models.CharField(max_length=200, null=True, blank=True)
     content = RichTextField()
 
     content_panels = Page.content_panels + [
-        FieldPanel("subtitle"),
+        FieldPanel("page_title"),
         FieldPanel("content"),
     ]
 
     class Meta:
-        verbose_name = "About Page"
-        verbose_name_plural = "About Pages"
+        verbose_name = "Terms Page"
+        verbose_name_plural = "Terms Pages"
