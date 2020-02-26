@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% load static %}
+{% load wagtailcore_tags %}
 
 {% block content %}
     <section id="contact-header" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% 50%;padding: 120px 0;">
@@ -125,37 +126,39 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact-form">
-                        <form action="" method="POST" enctype="multipart/form-data">
+                        <form action="{% pageurl page %}" method="POST">
+                            {% csrf_token %}
+
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Nume" class="form-input">
+                                        <input type="text" source="input" label="name" name="firstname" col="4" placeholder="Nume" class="form-input">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Prenume" class="form-input">
+                                        <input type="text" source="input" label="name" name="lastname" col="4" placeholder="Prenume" class="form-input">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Adresa email" class="form-input">
+                                        <input type="text" source="input" label="name" name="email" col="4" placeholder="Adresa email" class="form-input">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" source="input" label="name" name="make" col="4" placeholder="Numar telefon" class="form-input">
+                                        <input type="text" source="input" label="name" name="phone" col="4" placeholder="Numar telefon" class="form-input">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea type="text" name="additional_info" rows="4" cols="50" class="form-input" style="height: 155px;"></textarea>
+                                        <textarea type="text" name="subject" rows="4" cols="50" class="form-input" style="height: 155px;"></textarea>
                                     </div>
                                 </div>
                             </div>
