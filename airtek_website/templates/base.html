@@ -10,7 +10,19 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="images/favicon.png">
-        <title>Airtek </title>
+        <title>
+            {% block title_suffix %}
+                {% if settings.site_settings.GlobalSettings.site_title_suffix %}
+                    {{ settings.site_settings.GlobalSettings.site_title_suffix }}
+                {% endif %}
+            {% endblock %}
+
+            {% block title %}
+                {% if settings.site_settings.GlobalSettings.site_title %}
+                    {{ settings.site_settings.GlobalSettings.site_title }}
+                {% endif %}
+            {% endblock %}
+        </title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -22,16 +34,6 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap&amp;subset=latin-ext" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;display=swap" rel="stylesheet">
-        <title>
-            {% block title %}
-                {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
-            {% endblock %}
-            {% block title_suffix %}
-                {% with self.get_site.site_name as site_name %}
-                    {% if site_name %}- {{ site_name }}{% endif %}
-                {% endwith %}
-            {% endblock %}
-        </title>
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/airtek_website.css' %}">
