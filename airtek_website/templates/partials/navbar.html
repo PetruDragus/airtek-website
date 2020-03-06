@@ -1,5 +1,7 @@
 {% load wagtail_modeltranslation %}
 
+{% load i18n %}
+
 {% get_available_languages_wmt as languages %}
 
 <nav class="navbar navbar-expand-lg">
@@ -25,7 +27,7 @@
         </ul>
         <li id="language-picker">
             {% for language in languages %}
-                <a href="">{{ language }}</a>
+                <a href="{{ language }}">{{ language }}</a>
             {% endfor %}
 <!--            |-->
 <!--            <a href="http://www.belor.ro/ro" class="active">RO</a>-->

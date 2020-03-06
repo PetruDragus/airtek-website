@@ -1,4 +1,5 @@
 from home.models import HomePage
+from about.models import AboutPage
 from modeltranslation.translator import TranslationOptions
 from modeltranslation.decorators import register
 
@@ -9,3 +10,5 @@ class HomePageTR(TranslationOptions):
         'banner_title',
         'title',
     )
+
+

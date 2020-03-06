@@ -17,9 +17,11 @@ from django.utils.translation import gettext_lazy as _
 
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'ro'
 
+LANGUAGE_CODE = 'ro'
+
 LANGUAGES = (
+    ('ro', u'Romanian'),
    ('en', u'English'),
-   ('ro', u'Romanian'),
 )
 
 MODELTRANSLATION_LANGUAGES = ('ro', 'en')
