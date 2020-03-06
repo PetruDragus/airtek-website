@@ -1,0 +1,92 @@
+@media only screen and (max-width: 767px) {
+  section#contact-header {
+    padding: 150px 0 0 25px !important;
+    background-position: 75% 50% !important; }
+
+  section#product-header {
+    padding: 150px 0 0 25px !important;
+    background-position: 70% 50% !important;
+    height: 35rem; }
+    section#product-header h1.section-title {
+      font-size: 28px;
+      color: #1e1e1e;
+      line-height: 36px;
+      margin-bottom: 15px;
+      font-family: Raleway;
+      font-weight: 700;
+      width: 80%; }
+    section#product-header p.section-subtitle-medium {
+      margin-bottom: 10px;
+      font-family: Raleway;
+      font-size: 18px !important;
+      line-height: 26px !important;
+      width: 70% !important;
+      margin-top: 25px;
+      font-weight: 600; }
+
+  .section-half .section-title h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+    padding: 0 2rem; }
+
+  section#product-table table {
+    margin-top: 65px;
+    margin: 64px 15px; }
+
+  h1.section-title.text-center.width-100.aos-init.aos-animate {
+    width: 90% !important;
+    text-align: center;
+    margin: 0 auto; }
+
+  section#intro {
+    padding: 150px 25px 0 25px !important;
+    background-position: 75% 50% !important; }
+    section#intro p.section-subtitle-medium {
+      margin-bottom: 10px;
+      font-family: Raleway;
+      font-size: 18px !important;
+      line-height: 26px !important;
+      width: 70% !important;
+      margin-top: 25px;
+      font-weight: 600; }
+    section#intro .intro-boxes .item-box-wrapper {
+      text-align: center;
+      width: 100% !important; }
+    section#intro .intro-boxes .item-box {
+      margin-bottom: 30px; }
+
+  .last-green-itemx.mx-auto {
+    width: 100% !important; }
+
+  section.middle-section .section-content ul {
+    width: 100% !important;
+    padding-left: 0; }
+
+  section h1.section-title {
+    font-size: 28px;
+    color: #1e1e1e;
+    line-height: 36px;
+    margin-bottom: 15px;
+    font-family: Raleway;
+    font-weight: 700;
+    width: 80%; }
+  section p.section-subtitle-medium {
+    margin-bottom: 10px;
+    font-family: Raleway;
+    font-size: 18px !important;
+    line-height: 26px !important;
+    width: 70% !important;
+    margin-top: 25px;
+    font-weight: 600; }
+
+  nav.navbar img.navbar-logo {
+    width: 100px; }
+  nav.navbar ul.navbar-nav.mr-auto {
+    padding: 20px 0; }
+    nav.navbar ul.navbar-nav.mr-auto li.nav-item {
+      margin-left: 0 !important; } }
+.mm-b-30 {
+  margin-bottom: 30px; }
+
+/*# sourceMappingURL=responsive.css.map */

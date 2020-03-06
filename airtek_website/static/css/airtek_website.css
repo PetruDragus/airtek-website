@@ -20,6 +20,15 @@ nav.navbar {
   padding: 40px 0; }
   nav.navbar .navbar-logo {
     width: 150px; }
+  nav.navbar button.navbar-toggler {
+    display: grid;
+    outline: none; }
+    nav.navbar button.navbar-toggler span.navbar-toggler-icon:first-child {
+      width: 70%; }
+    nav.navbar button.navbar-toggler span.navbar-toggler-icon {
+      border-bottom: 2px solid #1e1e1e;
+      height: 1px !important;
+      padding-bottom: 5px; }
   nav.navbar ul.navbar-nav.mr-auto {
     margin-left: auto; }
     nav.navbar ul.navbar-nav.mr-auto li.nav-item {
@@ -64,7 +73,7 @@ section {
   section span.title-span-green {
     color: #00994E !important; }
   section h1.section-title {
-    font-size: 50px;
+    font-size: 42px;
     color: #1e1e1e;
     line-height: 60px;
     margin-bottom: 15px;
@@ -129,7 +138,8 @@ section {
       font-size: 15px;
       font-family: Raleway;
       font-weight: 600;
-      padding: 7px 25px; }
+      padding: 7px 25px;
+      border: none; }
 
 section#intro {
   padding: 175px 0; }
@@ -256,5 +266,56 @@ section.middle-section .last-green-itemx {
   .divider hr {
     border-top: 2px solid #DEDC01;
     width: 25%; }
+
+span.semi-bold {
+  font-weight: 700; }
+
+.section-half {
+  margin-top: 85px; }
+  .section-half .section-title h3 {
+    text-align: center;
+    font-size: 18px;
+    font-family: Raleway;
+    padding: 0 6rem; }
+  .section-half .section-image_second {
+    margin-bottom: 45px;
+    padding: 0 25px; }
+  .section-half .last-green-itemx {
+    background: #DEDC01;
+    border-radius: 25px;
+    padding: 35px;
+    display: grid;
+    width: 100%;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px #e0e0e0;
+    width: calc(100% - 100px); }
+    .section-half .last-green-itemx .cnt p {
+      margin-bottom: 0;
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 600; }
+
+section#product-table table {
+  margin-top: 65px; }
+  section#product-table table thead th {
+    border-top: none;
+    border-bottom: 2px solid #DEDC01; }
+  section#product-table table tbody td {
+    border-top: none;
+    border-bottom: 2px solid #DEDC01;
+    vertical-align: bottom;
+    padding-bottom: 15px; }
+    section#product-table table tbody td p.row-title {
+      font-size: 14px;
+      font-weight: 700;
+      /* font-family: Roboto Condensed; */
+      margin-bottom: 10px; }
+  section#product-table table span.table-badge {
+    background: #DEDC01;
+    padding: 5px 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Raleway;
+    font-weight: 600; }
 
 /*# sourceMappingURL=app.css.map */
