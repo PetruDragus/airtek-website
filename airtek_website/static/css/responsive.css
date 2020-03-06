@@ -1,3 +1,8 @@
+@media only screen and (min-width:768px) {
+    .navbar-toggler {
+        display:none !important;
+    }
+}
 @media only screen and (max-width: 767px) {
   section#contact-header {
     padding: 150px 0 0 25px !important;

@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% load wagtail_modeltranslation %}
+
 {% block content %}
     <section id="intro" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% 5%;">
         <div class="container">
@@ -98,12 +100,12 @@
         </div>
     </section>
 
-    <section class="middle-section" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 500% 5%;">
+    <section class="middle-section" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% -12rem;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
                     <div class="section-image_second" data-aos="fade-left">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThpYPJEITKfT6gVHSJp2iyZizL1g-MkjGN5M5UIzqiSiNYaHME">
+                        <img src="{% static "./img/AIRTEK06.png" %}">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="600">
@@ -122,12 +124,12 @@
         </div>
     </section>
 
-    <section class="middle-section">
+    <section class="middle-section" style="background-image: url('{% static "./img/3white.jpg" %}');background-repeat: no-repeat;background-position: 0% -12rem;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
                     <div class="section-image_second" data-aos="fade-right">
-                        <img src="https://images.vexels.com/media/users/17482/111837/preview2/49989ccf1961055d7bc4f6117f41445f-chemical-formula-icon-design.png">
+                        <img src="{% static "./img/AIRTEK06.png" %}">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="400">
@@ -203,12 +205,12 @@
         </div>
     </section>
 
-    <section class="middle-section">
+    <section class="middle-section" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% -12rem;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
                     <div class="section-image_second" data-aos="fade-right">
-                        <img src="https://image.freepik.com/free-vector/organic-fertilizer-icons-illustrations_83529-112.jpg" style="width: 389px !important;">
+                        <img src="{% static "./img/AIRTEK06.png" %}">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="600">

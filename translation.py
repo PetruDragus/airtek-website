@@ -1,9 +1,11 @@
-from .models import ContactPage
+from home.models import HomePage
 from modeltranslation.translator import TranslationOptions
 from modeltranslation.decorators import register
 
-@register(ContactPage)
-class FooTR(TranslationOptions):
+
+@register(HomePage)
+class HomePageTR(TranslationOptions):
     fields = (
-        'intro',
+        'banner_title',
+        'title',
     )

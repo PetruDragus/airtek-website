@@ -12,12 +12,19 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 from django.utils.translation import gettext_lazy as _
 
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'ro'
+
 LANGUAGES = (
-    ('en', _('English')),
-    ('ro', _('Romana')),
+   ('en', u'English'),
+   ('ro', u'Romanian'),
 )
+
+MODELTRANSLATION_LANGUAGES = ('ro', 'en')
+
+MODELTRANSLATION_FALLBACK_LANGUAGES = ('ro', 'en')
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
@@ -32,13 +39,14 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 INSTALLED_APPS = [
     'home',
     'search',
-    'contact',
+    # 'contact',
     'about',
     'product',
     'menus',
     'site_settings',
     'terms',
 
+    'wagtail_modeltranslation',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.contrib.settings',

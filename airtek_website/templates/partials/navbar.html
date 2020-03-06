@@ -1,3 +1,7 @@
+{% load wagtail_modeltranslation %}
+
+{% get_available_languages_wmt as languages %}
+
 <nav class="navbar navbar-expand-lg">
     <a href="/">
         <img src="http://www.belor.ro/assets/client/images/logo_airtek.png" class="navbar-logo">
@@ -20,9 +24,11 @@
 
         </ul>
         <li id="language-picker">
-            <a href="http://www.belor.ro/en">EN</a>
-            |
-            <a href="http://www.belor.ro/ro" class="active">RO</a>
+            {% for language in languages %}
+                <a href="">{{ language }}</a>
+            {% endfor %}
+<!--            |-->
+<!--            <a href="http://www.belor.ro/ro" class="active">RO</a>-->
         </li>
         <a href="/">
             <img src="http://www.belor.ro/assets/client/images/sigla-belor-romania.png" class="navbar-logo">
