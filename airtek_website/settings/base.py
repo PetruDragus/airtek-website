@@ -20,13 +20,26 @@ MODELTRANSLATION_DEFAULT_LANGUAGE = 'ro'
 LANGUAGE_CODE = 'ro'
 
 LANGUAGES = (
-    ('ro', u'Romanian'),
+   ('ro', u'Romanian'),
    ('en', u'English'),
 )
+
+DEFAULT_LANGUAGE = 1
 
 MODELTRANSLATION_LANGUAGES = ('ro', 'en')
 
 MODELTRANSLATION_FALLBACK_LANGUAGES = ('ro', 'en')
+
+
+
+OUR_I18N_METADATA = {
+    # iso15897 uses "_DE" because Facebook does not recognize _AT. And we have to use
+    # opengraph metatags
+    "ro": {"display_name": "Romana", "flag_code": "ro", "iso15897": "ro_RO"},
+    "en": {"display_name": "English", "flag_code": "gb", "iso15897": "en_US"},
+}
+
+
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
@@ -39,16 +52,16 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # Application definition
 
 INSTALLED_APPS = [
+    'wagtail_modeltranslation',
     'home',
     'search',
-    # 'contact',
+    'contact',
     'about',
     'product',
     'menus',
     'site_settings',
     'terms',
 
-    'wagtail_modeltranslation',
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.contrib.settings',
@@ -156,7 +169,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ro'
 
 TIME_ZONE = 'UTC'
 

@@ -12,10 +12,11 @@ from wagtail.admin.edit_handlers import (
 from wagtail.core.models import Orderable
 from wagtail.snippets.models import register_snippet
 
+from django.urls import resolve, translate_url
+from modeltranslation.decorators import register
 
-# Create your models here.
+
 class MenuItem(Orderable):
-
     link_title = models.CharField(
         blank=True,
         null=True,
@@ -78,3 +79,8 @@ class Menu(ClusterableModel):
 
     def __str__(self):
         return self.title
+
+
+def change_language(context, lang=None):
+    path = context['request'].path
+    return translate_url(path, lang)

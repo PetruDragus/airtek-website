@@ -1,14 +1,14 @@
-from home.models import HomePage
+from terms.models import TermsPage
 from contact.models import ContactPage
 from modeltranslation.translator import TranslationOptions
 from modeltranslation.decorators import register
 
 
-@register(HomePage)
-class HomePageTR(TranslationOptions):
+@register(TermsPage)
+class TermsPageTR(TranslationOptions):
     fields = (
-        'banner_title',
-        'title',
+        'page_title',
+        'content',
     )
 
 
