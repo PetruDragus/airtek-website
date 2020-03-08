@@ -1,7 +1,28 @@
 from django.db import models
 
+from wagtail.admin.edit_handlers import \
+    FieldPanel, \
+    StreamFieldPanel, \
+    MultiFieldPanel
+
+from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.core.models import Page
-from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.core.fields import StreamField
+
+from streams import blocks
+from django.utils import translation
+
+
+class TranslatedField:
+    def __init__(self, en_field, ro_field):
+        self.en_field = en_field
+        self.ro_field = ro_field
+
+    def __get__(self, instance, owner):
+        if translation.get_language() == 'en':
+            return getattr(instance, self.ro_field)
+        else:
+            return getattr(instance, self.en_field)
 
 
 class HomePage(Page):
@@ -9,11 +30,35 @@ class HomePage(Page):
     templates = "home/home_page.html"
     # max_count = 1
 
-    banner_title = models.CharField(max_length=100, blank=True, null=True)
-    banner_title_en = models.CharField(max_length=100, blank=True, null=True)
+    hero_title = models.CharField(max_length=100, blank=True, null=True)
+    hero_subtitle = models.TextField(blank=True, null=True)
+
+    hero_image = models.ForeignKey(
+        'wagtailimages.Image',
+        blank=True,
+        null=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+    )
+
+    content = StreamField(
+        [
+            ("main_block", blocks.MainBlock())
+        ],
+        blank=True,
+        null=True,
+        default=[]
+    )
 
     content_panels = Page.content_panels + [
-        FieldPanel("banner_title")
+        MultiFieldPanel(
+            [
+                FieldPanel('hero_title'),
+                FieldPanel('hero_subtitle'),
+                ImageChooserPanel('hero_image')
+            ], "Hero"
+        ),
+        StreamFieldPanel("content")
     ]
 
     class Meta:

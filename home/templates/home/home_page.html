@@ -4,21 +4,22 @@
 
 {% load wagtail_modeltranslation %}
 
+{% load wagtailcore_tags %}
+
+{% load wagtailimages_tags %}
+
 {% block content %}
-    <section id="intro" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% 5%;">
+
+    {% image self.hero_image width-900 as img %}
+    <section id="intro" style="background-image: url('{{ img.url }}');background-repeat: no-repeat;background-position: 100% 5%;">
         <div class="container">
             <div class="row">
                 <h1 class="section-title" data-aos="zoom-in">
-                    <span class="title-span">AIR</span>TEK® Motor de crestere pentru culturi prospere
+                    <span class="title-span">AIR</span>TEK® {{ self.hero_title }}
                 </h1>
 
                 <p class="section-subtitle fade-right" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">
-                    AIRTEK® este rezultatul colaborarii dintre
-                    Belor si BASF, ingrasaminte ce inglobeaza cele
-                    mai noi tehnologii pentru performante ridicate
-                    in agricultura: azot inhibat cu Limus® care reduce cu peste 70% volatilizarea si pierderile de azot in atmosfera.
-                    EN | RO Contact
-
+                    {{ self.hero_subtitle }}
                 </p>
             </div>
         </div>
@@ -75,6 +76,10 @@
             </div>
         </div>
     </section>
+
+    {% for block in page.content %}
+        {% include_block block %}
+    {% endfor %}
 
     <section class="middle-section" style="background-image: url('{% static "./img/3white.jpg" %}');background-repeat: no-repeat;background-position: 0% -12rem;">
         <div class="container">

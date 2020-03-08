@@ -1,0 +1,29 @@
+{% load static %}
+
+{% load wagtail_modeltranslation %}
+
+{% load wagtailcore_tags %}
+
+<section class="middle-section" style="background-image: url('{% static "./img/3white.jpg" %}');background-repeat: no-repeat;background-position: 0% -12rem;">
+    <div class="container">
+        <div class="row">
+            <div class="section-header text-center animated bounceInDown">
+                <div class="section-image_second" data-aos="fade-right">
+                    <img src="{% static "./img/AIRTEK06.png" %}">
+                </div>
+
+                <h2 class="section-title" data-aos="fade-in" data-aos-duration="600">
+                    {{ self.title }}
+                </h2>
+
+                <p class="section-subtitle mx-auto" data-aos="fade-in" data-aos-duration="600">
+                    {{ self.subtitle }}
+                </p>
+            </div>
+
+            <div class="divider">
+                <hr />
+            </div>
+        </div>
+    </div>
+</section>
