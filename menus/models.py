@@ -14,6 +14,19 @@ from wagtail.snippets.models import register_snippet
 
 from django.urls import resolve, translate_url
 from modeltranslation.decorators import register
+from django.utils import translation
+
+
+class TranslatedField:
+    def __init__(self, en_field, ro_field):
+        self.en_field = en_field
+        self.ro_field = ro_field
+
+    def __get__(self, instance, owner):
+        if translation.get_language() == 'en':
+            return getattr(instance, self.ro_field)
+        else:
+            return getattr(instance, self.en_field)
 
 
 class MenuItem(Orderable):

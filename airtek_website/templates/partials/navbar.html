@@ -2,6 +2,9 @@
 
 {% get_available_languages_wmt as languages %}
 
+{% load i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
 
 <nav class="navbar navbar-expand-lg">
     <a href="/">
@@ -27,10 +30,10 @@
         <li id="language-picker">
             <a
                 href="/en{{ request.get_full_path|slice:'3:' }}"
-                class="{% if language.is_active %} active {% endif %}"
+                class="{% if request.LANGUAGE_CODE == 'en' %} active {% endif %}"
             >EN</a>
             |
-            <a href="/ro{{ request.get_full_path|slice:'3:' }}" class="active">RO</a>
+            <a href="/ro{{ request.get_full_path|slice:'3:' }}" class="{% if request.LANGUAGE_CODE == 'ro' %} active {% endif %}">RO</a>
         </li>
         <a href="/">
             <img src="http://www.belor.ro/assets/client/images/sigla-belor-romania.png" class="navbar-logo">

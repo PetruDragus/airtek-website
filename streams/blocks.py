@@ -12,3 +12,16 @@ class MainBlock(blocks.StructBlock):
         template = "streams/main_block.html"
         icon = "edit"
         label = "Main Block"
+
+
+class TeamBlock(blocks.StructBlock):
+
+    title = blocks.CharBlock(required=True, help_text="Add title"),
+    name = blocks.CharBlock(required=True, help_text="Add block title"),
+    phone = blocks.CharBlock(required=True, help_text="Add phone number"),
+    email = blocks.CharBlock(required=True, help_text="Add email address")
+
+    class Meta:
+        template = "streams/team_block.html"
+        icon = "edit"
+        label = "Team Block"

@@ -1,8 +1,3 @@
-@media only screen and (min-width:768px) {
-    .navbar-toggler {
-        display:none !important;
-    }
-}
 @media only screen and (max-width: 767px) {
   section#contact-header {
     padding: 150px 0 0 25px !important;
@@ -45,8 +40,10 @@
     margin: 0 auto; }
 
   section#intro {
-    padding: 150px 25px 0 25px !important;
-    background-position: 75% 50% !important; }
+    padding: 50px 25px 0 25px !important;
+    background-position: 75% 30% !important; }
+    section#intro p.section-subtitle {
+      width: 70% !important; }
     section#intro p.section-subtitle-medium {
       margin-bottom: 10px;
       font-family: Raleway;
@@ -84,6 +81,8 @@
     width: 70% !important;
     margin-top: 25px;
     font-weight: 600; }
+  section .section-image_second img {
+    width: 80% !important; }
 
   nav.navbar img.navbar-logo {
     width: 100px; }
@@ -94,4 +93,17 @@
 .mm-b-30 {
   margin-bottom: 30px; }
 
+.product-page-green-box h4 {
+  font-weight: 700;
+  font-family: Raleway;
+  font-size: 26px; }
+.product-page-green-box p {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0; }
+
+.navbar-toggler {
+    display:none !important;
+}
 /*# sourceMappingURL=responsive.css.map */

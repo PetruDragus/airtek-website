@@ -24,7 +24,7 @@ LANGUAGES = (
    ('en', u'English'),
 )
 
-DEFAULT_LANGUAGE = 1
+DEFAULT_LANGUAGE = 0
 
 MODELTRANSLATION_LANGUAGES = ('ro', 'en')
 

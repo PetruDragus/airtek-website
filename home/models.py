@@ -40,6 +40,8 @@ class HomePage(Page):
         on_delete=models.SET_NULL,
         related_name='+'
     )
+    background_vertical = models.CharField(max_length=100, blank=True, null=True)
+    background_horizontal = models.CharField(max_length=100, blank=True, null=True)
 
     content = StreamField(
         [
@@ -55,7 +57,9 @@ class HomePage(Page):
             [
                 FieldPanel('hero_title'),
                 FieldPanel('hero_subtitle'),
-                ImageChooserPanel('hero_image')
+                ImageChooserPanel('hero_image'),
+                FieldPanel('background_vertical'),
+                FieldPanel('background_horizontal'),
             ], "Hero"
         ),
         StreamFieldPanel("content")
