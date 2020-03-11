@@ -4,11 +4,11 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-    <section id="contact-header" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% 50%;padding: 120px 0;">
+    <section id="contact-header" style="background-image: url('{% static "./img/3/D3.jpg" %}');background-repeat: no-repeat;background-position: 100% -5rem;padding: 200px 0;">
         <div class="container">
             <div class="row">
                 <h1 class="section-title" data-aos="zoom-in">
-                    Contact <span class="title-span-green">BELOR</span>
+                    Contact
                 </h1>
             </div>
         </div>
@@ -18,20 +18,16 @@
                 <div class="list-wrap fade-right" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">
                     <ul>
                         <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+40.336.401.964</span>
+                            <img src="{% static "./img/icons/28.png" %}" width="35">
+                            <span>+40.336.401.964</span> / <span style="margin-left: 0;">+40.336.401.966</span>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
-                            <span>+40.336.401.964</span>
-                        </li>
-                        <li>
-                            <i class="far fa-envelope"></i>
+                            <img src="{% static "./img/icons/27.png" %}" width="35">
                             <span>info@belor.ro</span>
                         </li>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Corp B, Cam. 8-16, Strada Domneasca 49 , Galati, Romania</span>
+                            <img src="{% static "./img/icons/29.png" %}" width="35">
+                            <span>Corp B, Cam. 8-16, Strada Domneasca 49, Galati, Romania</span>
                         </li>
                     </ul>
                 </div>
@@ -60,15 +56,15 @@
 
                             <ul>
                                 <li>
-                                    <i class="fas fa-phone"></i>
+                                    <img src="{% static "./img/icons/26.png" %}" width="35">
                                     <span>Toni Radu</span>
                                 </li>
                                 <li>
-                                    <i class="fas fa-phone"></i>
-                                    <span>+40.336.401.964</span>
+                                    <img src="{% static "./img/icons/28.png" %}" width="35">
+                                    <span>+40.744.563.330</span>
                                 </li>
                                 <li>
-                                    <i class="far fa-envelope"></i>
+                                    <img src="{% static "./img/icons/27.png" %}" width="35">
                                     <span>toni.radu@belor.ro</span>
                                 </li>
                             </ul>
@@ -83,16 +79,16 @@
 
                             <ul>
                                 <li>
-                                    <i class="fas fa-phone"></i>
-                                    <span>Toni Radu</span>
+                                    <img src="{% static "./img/icons/26.png" %}" width="35">
+                                    <span>Dragos Fatu</span>
                                 </li>
                                 <li>
-                                    <i class="fas fa-phone"></i>
-                                    <span>+40.336.401.964</span>
+                                    <img src="{% static "./img/icons/28.png" %}" width="35">
+                                    <span>+40.740.589.393</span>
                                 </li>
                                 <li>
-                                    <i class="far fa-envelope"></i>
-                                    <span>toni.radu@belor.ro</span>
+                                    <img src="{% static "./img/icons/27.png" %}" width="35">
+                                    <span>dragos.fatu@belor.ro</span>
                                 </li>
                             </ul>
                         </div>
@@ -106,22 +102,71 @@
 
                             <ul>
                                 <li>
-                                    <i class="fas fa-phone"></i>
-                                    <span>Toni Radu</span>
+                                    <img src="{% static "./img/icons/26.png" %}" width="35">
+                                    <span>Catalin Stoian</span>
                                 </li>
                                 <li>
-                                    <i class="fas fa-phone"></i>
-                                    <span>+40.336.401.964</span>
+                                    <img src="{% static "./img/icons/28.png" %}" width="35">
+                                    <span>+40.726.005.683</span>
                                 </li>
                                 <li>
-                                    <i class="far fa-envelope"></i>
-                                    <span>toni.radu@belor.ro</span>
+                                    <img src="{% static "./img/icons/27.png" %}" width="35">
+                                    <span>catalin.stoian@belor.ro</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <style>
+              input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background: lightgray;
+  height: 16px;
+  width: 16px;
+  border: 1px solid white;
+}
+
+input[type="checkbox"]:checked {
+  background: #00994e!important;
+}
+
+input[type="checkbox"]:hover {
+  filter: brightness(90%);
+}
+
+input[type="checkbox"]:disabled {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+input[type="checkbox"]:after {
+content: '';
+    position: relative;
+    left: 36%;
+    top: 23%;
+    width: 31%;
+    height: 50%;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+input[type="checkbox"]:disabled:after {
+  border-color: #7b7b7b;
+}
+            </style>
 
             <div class="row">
                 <div class="col-md-6">
@@ -162,6 +207,17 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form__checkbox-wrapper form__checkbox-wrapper--w-100" style="margin-bottom: 25px;">
+                                        <input type="checkbox" class="bigcheck form-project__accept" id="form-project__accept" name="accept" required>
+                                        <span class="bigcheck-target"></span>
+                                        <label class="form-project__accept-label form-project__accept-label--full" for="form-project__accept">
+                                            Sunt deacord cu <a href="/termeni-conditii/" style="color:rgb(0, 100, 17); opacity:1; font-size: 14px!important;"><span style="margin-left: 3px; "> <b> Termeni si conditii</b></span></a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                             <button type="submit" class="btn btn-primary submit-form">Submit</button>
                         </form>
                     </div>
@@ -171,7 +227,7 @@
                     <div class="m-t-45">
                         <div class="title-block7"></div>
                         <div style="width: 100%;box-shadow: 0 0 5px #d6d6d6;">
-                            <iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&amp;height=500&amp;hl=en&amp;q=Halenseestraße+3,+10711+Berlin,+Germany+(Blackhansa)&amp;ie=UTF8&amp;t=&amp;z=16&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            <iframe width="100%" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.5160815658423!2d28.05411455189716!3d45.439255478997985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6de53bc163ab3%3A0xd94b39ed81991ad7!2sBelor%20Romania%20SA!5e0!3m2!1sen!2sro!4v1583866258825!5m2!1sen!2sro" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                             </iframe>
                         </div>
                         <br>

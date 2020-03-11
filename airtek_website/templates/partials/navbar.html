@@ -4,11 +4,13 @@
 
 {% load i18n %}
 
+{% load static %}
+
 {% get_current_language as LANGUAGE_CODE %}
 
 <nav class="navbar navbar-expand-lg">
     <a href="/">
-        <img src="http://www.belor.ro/assets/client/images/logo_airtek.png" class="navbar-logo">
+        <img src="{% static "./img/logo.jpg" %}" class="navbar-logo">
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,8 +37,8 @@
             |
             <a href="/ro{{ request.get_full_path|slice:'3:' }}" class="{% if request.LANGUAGE_CODE == 'ro' %} active {% endif %}">RO</a>
         </li>
-        <a href="/">
+      <!--   <a href="/">
             <img src="http://www.belor.ro/assets/client/images/sigla-belor-romania.png" class="navbar-logo">
-        </a>
+        </a> -->
     </div>
 </nav>

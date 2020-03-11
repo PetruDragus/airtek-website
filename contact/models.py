@@ -8,16 +8,13 @@ from wagtail.admin.edit_handlers import (
     FieldPanel,
     FieldRowPanel,
     InlinePanel,
-    MultiFieldPanel,
-    StreamFieldPanel
+    MultiFieldPanel
 )
-from wagtail.core.fields import RichTextField, StreamField
+from wagtail.core.fields import RichTextField
 from wagtail.contrib.forms.models import (
     AbstractEmailForm,
     AbstractFormField
 )
-
-from streams import blocks
 
 
 class TranslatedField:
@@ -44,22 +41,13 @@ class ContactPage(AbstractEmailForm, Page):
     templates = "contact/contact_page.html"
 
     intro = RichTextField(blank=True)
-    thank_you_text = RichTextField(blank=True)
 
-    content = StreamField(
-        [
-            ("team_block", blocks.TeamBlock())
-        ],
-        blank=True,
-        null=True,
-        default=[],
-    )
+    thank_you_text = RichTextField(blank=True)
 
     content_panels = AbstractEmailForm.content_panels + [
         FieldPanel("intro"),
         InlinePanel("form_fields", label="Form Fields"),
         FieldPanel("thank_you_text"),
-        StreamFieldPanel("content"),
         MultiFieldPanel([
             FieldRowPanel([
                 FieldPanel("from_address", classname="col-6"),

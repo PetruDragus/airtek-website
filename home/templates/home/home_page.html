@@ -11,7 +11,7 @@
 {% block content %}
 
     {% image self.hero_image width-900 as img %}
-    <section id="intro" style="background-image: url('{{ img.url }}');background-repeat: no-repeat;background-position: 100% 5%;">
+    <section id="intro" style="background-image: url('{{ img.url }}');background-repeat: no-repeat;background-position: 100% -5rem;background-size: 85% 75%;padding: 200px 0 50px 0;">
         <div class="container">
             <div class="row">
                 <h1 class="section-title" data-aos="zoom-in">
@@ -32,7 +32,7 @@
                             <div class="col-md-3 item-box" data-aos="fade-left" data-aos-delay="300">
                                 <div class="item-box-wrapper">
                                     <div class="item-box-icon">
-                                        <img src="https://lh3.googleusercontent.com/Rilq4obCk7XIl2Pjb8XT-Ydh_aI3hBNeFwro9fFXrIAuC-zPxCZ4feE4rx5fZ3jHNLw" />
+                                        <img src="{% static "./img/icons/icons-09.jpg" %}" style="width:100px;" />
                                     </div>
                                     <div class="item-box-text">
                                         Problema
@@ -42,7 +42,7 @@
                             <div class="col-md-3 item-box" data-aos="fade-left" data-aos-delay="500">
                                 <div class="item-box-wrapper">
                                     <div class="item-box-icon">
-                                        <img src="https://lh3.googleusercontent.com/Rilq4obCk7XIl2Pjb8XT-Ydh_aI3hBNeFwro9fFXrIAuC-zPxCZ4feE4rx5fZ3jHNLw" />
+                                        <img src="{% static "./img/icons/icons-10.jpg" %}" style="width:100px;" />
                                     </div>
                                     <div class="item-box-text">
                                         Solutie
@@ -52,20 +52,20 @@
                             <div class="col-md-3 item-box" data-aos="fade-left" data-aos-delay="900">
                                 <div class="item-box-wrapper">
                                     <div class="item-box-icon">
-                                        <img src="https://lh3.googleusercontent.com/Rilq4obCk7XIl2Pjb8XT-Ydh_aI3hBNeFwro9fFXrIAuC-zPxCZ4feE4rx5fZ3jHNLw" />
+                                        <img src="{% static "./img/icons/icons-11.jpg" %}" style="width:100px;" />
                                     </div>
                                     <div class="item-box-text">
-                                        Plus
+                                        Inbunatatire
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 item-box" data-aos="fade-left" data-aos-delay="1200">
                                 <div class="item-box-wrapper">
                                     <div class="item-box-icon">
-                                        <img src="https://lh3.googleusercontent.com/Rilq4obCk7XIl2Pjb8XT-Ydh_aI3hBNeFwro9fFXrIAuC-zPxCZ4feE4rx5fZ3jHNLw" />
+                                        <img src="{% static "./img/icons/icons-12.jpg" %}" style="width:100px;" />
                                     </div>
                                     <div class="item-box-text">
-                                        Ceva
+                                        Rezultate
                                     </div>
                                 </div>
                             </div>
@@ -81,12 +81,12 @@
         {% include_block block %}
     {% endfor %}
 
-    <section class="middle-section" style="background-image: url('{% static "./img/3white.jpg" %}');background-repeat: no-repeat;background-position: 0% -12rem;">
+    <section class="middle-section first-section" style="background-image: url('{% static "./img/3/S5.jpg" %}');background-repeat: no-repeat;background-position: 0% -5rem;background-size: 75% 75%;padding: 200px 0 0 0;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center animated bounceInDown">
                     <div class="section-image_second" data-aos="fade-right">
-                        <img src="{% static "./img/AIRTEK06.png" %}">
+                        <img src="{% static "./img/large/WEBSITE13.png" %}" style="width: 35%;">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="600">
@@ -105,12 +105,12 @@
         </div>
     </section>
 
-    <section class="middle-section" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% -12rem;">
+    <section class="middle-section second-section" style="background-image: url('{% static "./img/3/D4.jpg" %}');background-repeat: no-repeat;background-position: 100% -4rem;background-size: 75% 65%;padding: 200px 0 0 0;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
                     <div class="section-image_second" data-aos="fade-left">
-                        <img src="{% static "./img/AIRTEK06.png" %}">
+                        <img src="{% static "./img/large/WEBSITE14.png" %}" style="width: 35%;">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="600">
@@ -129,12 +129,12 @@
         </div>
     </section>
 
-    <section class="middle-section" style="background-image: url('{% static "./img/3white.jpg" %}');background-repeat: no-repeat;background-position: 0% -12rem;">
+    <section class="middle-section third-section" style="background-image: url('{% static "./img/2x.jpg" %}');background-repeat: no-repeat;background-position: 0% -4rem;background-size: 75% 55%;padding:200px 0 0 0;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
                     <div class="section-image_second" data-aos="fade-right">
-                        <img src="{% static "./img/AIRTEK06.png" %}">
+                        <img src="{% static "./img/large/WEBSITE15.png" %}" style="width: 35%;">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="400">
@@ -152,24 +152,24 @@
                             <div class="col-md-6">
                                 <ul>
                                     <li class="green-box" data-aos="fade-right" data-aos-delay="300">
-                                        <div class="left">
+                                        <!-- <div class="left">
                                             <i class="fas fa-tractor"></i>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="right">
+                                        <div class="right text-center width-100">
                                             <span class="sp-bold">Uree</span>
                                             <span class="sp-white"> >95% </span>
                                         </div>
                                     </li>
 
                                     <li class="green-box" data-aos="fade-right" data-aos-delay="600">
-                                        <div class="left">
+                                        <!-- <div class="left">
                                             <i class="fas fa-tractor"></i>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="right">
-                                            <span class="sp-bold">Uree</span>
-                                            <span class="sp-white"> >95% </span>
+                                        <div class="right text-center width-100">
+                                            <span class="sp-bold">Independenta</span>
+                                            <span class="sp-white"> climatica </span>
                                         </div>
                                     </li>
                                 </ul>
@@ -177,24 +177,24 @@
                             <div class="col-md-6">
                                 <ul>
                                     <li class="green-box" data-aos="fade-left" data-aos-delay="900">
-                                        <div class="left">
+                                        <!-- <div class="left">
                                             <i class="fas fa-tractor"></i>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="right">
-                                            <span class="sp-bold">Uree</span>
-                                            <span class="sp-white"> >95% </span>
+                                        <div class="right text-center width-100">
+                                            <span class="sp-bold">Flexibilitate </span>
+                                            <span class="sp-white"> in aplicare </span>
                                         </div>
                                     </li>
 
                                     <li class="green-box" data-aos="fade-left" data-aos-delay="1200">
-                                        <div class="left">
+                                        <!-- <div class="left">
                                             <i class="fas fa-tractor"></i>
-                                        </div>
+                                        </div> -->
 
-                                        <div class="right">
-                                            <span class="sp-bold">Uree</span>
-                                            <span class="sp-white"> >95% </span>
+                                        <div class="right text-center width-100">
+                                            <span class="sp-bold">Azot</span>
+                                            <span class="sp-white"> +15-20 zile </span>
                                         </div>
                                     </li>
                                 </ul>
@@ -210,20 +210,20 @@
         </div>
     </section>
 
-    <section class="middle-section" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% -12rem;">
+    <section class="middle-section last-section" style="background-image: url('{% static "./img/3/D6.jpg" %}');background-repeat: no-repeat;background-position: 100% -4rem;background-size: 75% 55%;padding: 200px 0 65px 0;">
         <div class="container">
             <div class="row">
                 <div class="section-header text-center">
                     <div class="section-image_second" data-aos="fade-right">
-                        <img src="{% static "./img/AIRTEK06.png" %}">
+                        <img src="{% static "./img/large/WEBSITE16.png" %}" style="width: 35%;">
                     </div>
 
                     <h2 class="section-title" data-aos="fade-in" data-aos-duration="600">
-                        Inbunatatire
+                        Eficienta dovedita
                     </h2>
 
                     <p class="section-subtitle mx-auto" data-aos="fade-in" data-aos-duration="600">
-                        Ingrasamintele AIRTEK® tratate cu inhibitorul Limus® de la BASF, reduc volatilitatea amoniacului din Uree cu pana la 95%, ofera o mai buna flexibilitate in aplicare, protejeaza impotriva pierderilor de azot si extind disponibilitatea azotului pentru o perioada suplimentara de pana la 15-20 zile, independent de conditiile de vreme.
+                        Gama de produse AIRTEK® a fost dovedita in cadrul testarilor de la Centrul de Competente Tehnice BASF Romania cu urmatoarele rezultate:
                     </p>
                 </div>
 
@@ -233,17 +233,14 @@
                             <div class="col-md-6">
                                 <div class="last-green-itemx mx-auto">
                                     <div class="head">
-                                        <div class="head-text">
-                                            <span class="sp-bold">Porumb</span>
+                                        <div class="head-text" style="text-align: center;width: 100%;">
+                                            <span class="sp-white" style="font-size: 56px;font-family: Roboto;"> + 7.5% </span>
                                             <br>
-                                            <span class="sp-white"> >8% </span>
-                                        </div>
-                                        <div class="head-icon">
-                                            <i class="fas fa-seedling"></i>
+                                            <span class="sp-bold">Porumb</span>
                                         </div>
                                     </div>
                                     <div class="cnt">
-                                        <p>Sporul de productie in favoarea AIRTEK® cu Limus® a fost de +700 kg/ha, cu 7.5% mai mult fata de Urea conventionala fara Limus®.</p>
+                                        <p style="font-family: Roboto Condensed;text-align:center;font-weight: 500;">Sporul de productie in favoarea AIRTEK® cu Limus® a fost de +700 kg/ha, cu 7.5% mai mult fata de Urea conventionala fara Limus®.</p>
                                     </div>
                                 </div>
                             </div>
@@ -251,17 +248,14 @@
                             <div class="col-md-6">
                                 <div class="last-green-itemx mx-auto">
                                     <div class="head">
-                                        <div class="head-text">
-                                            <span class="sp-bold">Porumb</span>
+                                        <div class="head-text" style="text-align: center;width: 100%;">
+                                            <span class="sp-white" style="font-size: 56px;font-family: Roboto;"> + 11.5% </span>
                                             <br>
-                                            <span class="sp-white"> >8% </span>
-                                        </div>
-                                        <div class="head-icon">
-                                            <i class="fas fa-seedling"></i>
+                                            <span class="sp-bold">Floarea soarelui</span>
                                         </div>
                                     </div>
                                     <div class="cnt">
-                                        <p>Sporul de productie in favoarea AIRTEK® cu Limus® a fost de +700 kg/ha, cu 7.5% mai mult fata de Urea conventionala fara Limus®.</p>
+                                        <p style="font-family: Roboto Condensed;text-align:center;font-weight: 500;">Sporul de productie in favoarea AIRTEK® cu Limus a fost de +259 kg/ha, cu 11.5% mai mult fata de Urea conventionala fara Limus®.</p>
                                     </div>
                                 </div>
                             </div>

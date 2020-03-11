@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('wagtailcore', '0046_auto_20200306_1428'),
+        # ('wagtailcore', '0002_homepage_banner_title_en.py'),
     ]
 
     operations = [

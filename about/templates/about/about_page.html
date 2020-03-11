@@ -5,7 +5,7 @@
 {% load wagtailcore_tags %}
 
 {% block content %}
-    <section id="contact-header" style="background-image: url('{% static "./img/white.jpg" %}');background-repeat: no-repeat;background-position: 100% 50%;padding: 120px 0;">
+    <section class="about-age" id="contact-header" style="background-image: url('{% static "./img/3/D7.jpg" %}');background-repeat: no-repeat;background-position: 100% -5rem;padding: 200px 0 125px 0;">
         <div class="container">
             <div class="row">
                 <h1 class="section-title" data-aos="zoom-in">
@@ -14,16 +14,51 @@
                 </h1>
 
                 <p class="section-subtitle-medium fade-right" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">
-                    {{ self.subtitle|richtext }}
+                    <b>Belor Romania</b> este parte a grupului
+german Belor infiintat in anul 2001,
+holding care detine astazi reprezentante
+la nivel international in Germania,
+Franta, Italia, Finlanda, Suedia,
+Estonia, Letonia, Lituania, Polonia,
+Bulgaria si Romania.
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="contact-body">
+    <section class="contact-body body-about" style="padding:0;">
         <div class="container">
-            <div class="content-text">
-                {{ self.content|richtext }}
+            <div class="row">
+                <div class="content-text">
+                    {{ self.content|richtext }}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="video-wrapper video-wrapper-home" style="background:url({% static "./img/background/img-video1.jpg" %}) no-repeat center top;height: 400px;background-size: 100% 100%;box-shadow: 0 0 25px #d6d6d6;border-radius: 15px;">
+                        <div class="video-play" style="position: absolute;top: calc(50% - 45px);left: calc(50% - 30px);">
+                            <a target="_blank" href="https://www.youtube.com/watch?v=KTCvqX8VCSo&feature=emb_title" data-gal="prettyPhoto">
+                                <i class="fa fa-play" style="color: #fff;
+                                width: 85px;
+                                height: 85px;
+                                padding: 23px 0 0 10px;
+                                font-size: 38px;
+                                text-align: center;
+                                border: #fff 3px solid;
+                                z-index: 9999;
+                                -webkit-border-radius: 99%;
+                                -moz-border-radius: 99%;
+                                -o-border-radius: 99%;
+                                border-radius: 99%;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

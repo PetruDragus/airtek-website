@@ -1,7 +1,8 @@
 @media only screen and (max-width: 767px) {
   section#contact-header {
     padding: 150px 0 0 25px !important;
-    background-position: 75% 50% !important; }
+    background-position: 75% -2rem !important;
+    background-size: 100% 85% !important; }
 
   section#product-header {
     padding: 150px 0 0 25px !important;
@@ -40,8 +41,10 @@
     margin: 0 auto; }
 
   section#intro {
-    padding: 50px 25px 0 25px !important;
-    background-position: 75% 30% !important; }
+    padding: 50px 25px 25px 25px !important;
+    background-position: 100% 5rem !important;
+    overflow:hidden;
+    background-size: 100% 30% !important; }
     section#intro p.section-subtitle {
       width: 70% !important; }
     section#intro p.section-subtitle-medium {
@@ -89,7 +92,75 @@
   nav.navbar ul.navbar-nav.mr-auto {
     padding: 20px 0; }
     nav.navbar ul.navbar-nav.mr-auto li.nav-item {
-      margin-left: 0 !important; } }
+      margin-left: 0 !important; }
+
+      .intro-boxes {
+padding: 50px 25px !important;}
+
+section.first-section {
+background-size: 100% 45% !important;
+background-position: 0% -1rem !important;
+overflow:hidden;}
+
+section.second-section {
+background-size: 100% 45% !important;
+background-position: 100% -2rem !important;
+overflow:hidden;}
+
+
+
+section.last-section {
+background-position: 100% -2rem !important;
+background-size: 100% 25% !important;
+overflow:hidden;}
+
+.middle-section.third-section {
+    background-position: 0% -2rem !important;
+    background-size: 100% 25% !important;
+    overflow:hidden;
+}
+
+section h2.section-title {
+    line-height: 42px;
+}
+
+p.section-subtitle {
+    margin-top: 25px;
+}
+
+section#product-header {
+    background-position: 87% -2rem !important;
+    height: auto !important;
+    background-size: 100% 45% !important;
+    overflow:hidden;
+}
+
+section.product-video {
+    padding: 45px 0 !important;
+    overflow: hidden;
+}
+
+section.section-02 {
+    background-position: 0% 1rem !important;
+    background-size: 125% 40% !important;
+}
+
+section#product-table {
+background-position: 100% 0rem;
+    background-size: 100% 20%;
+}
+
+section.section-02 .section-image_second img {
+    width: 100% !important;
+}
+
+.video-wrapper.video-wrapper-home {
+    height: 200px !important;
+}
+
+.section-image_second {
+    text-align: center;
+}
 .mm-b-30 {
   margin-bottom: 30px; }
 
@@ -103,7 +174,25 @@
   font-weight: 500;
   margin-bottom: 0; }
 
-.navbar-toggler {
-    display:none !important;
+.section-subtitle {
+    margin-top: 35px !important;
 }
+
+section.about-page {
+    background-position: 65% -2rem !important;
+background-size: 100% 77% !important;
+}
+
+section.body-about {
+    padding: 15px !important;
+}
+
+.product-body section {
+    overflow: visible !important;
+}
+      }
+
+
+
+
 /*# sourceMappingURL=responsive.css.map */
