@@ -197,5 +197,9 @@ overflow:hidden;}
 
 
 
+@media only screen and (min-width:1000px) {
+.navbar-toggler: opacity: 0;
+}
+
 
 /*# sourceMappingURL=responsive.css.map */
