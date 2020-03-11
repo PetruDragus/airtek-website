@@ -44,7 +44,7 @@
     padding: 50px 25px 25px 25px !important;
     background-position: 100% 5rem !important;
     overflow:hidden;
-    background-size: 100% 30% !important; }
+    background-size: 125% 25% !important; }
     section#intro p.section-subtitle {
       width: 70% !important; }
     section#intro p.section-subtitle-medium {
@@ -98,12 +98,12 @@
 padding: 50px 25px !important;}
 
 section.first-section {
-background-size: 100% 45% !important;
+background-size: 125% 35% !important;
 background-position: 0% -1rem !important;
 overflow:hidden;}
 
 section.second-section {
-background-size: 100% 45% !important;
+background-size: 125% 35% !important;
 background-position: 100% -2rem !important;
 overflow:hidden;}
 
@@ -111,12 +111,12 @@ overflow:hidden;}
 
 section.last-section {
 background-position: 100% -2rem !important;
-background-size: 100% 25% !important;
+background-size: 125% 25% !important;
 overflow:hidden;}
 
 .middle-section.third-section {
     background-position: 0% -2rem !important;
-    background-size: 100% 25% !important;
+    background-size: 125% 25% !important;
     overflow:hidden;
 }
 
@@ -190,6 +190,9 @@ section.body-about {
 .product-body section {
     overflow: visible !important;
 }
+
+.contact-body {
+overflow:hidden;}
       }
 
 
